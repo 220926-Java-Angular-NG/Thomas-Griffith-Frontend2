@@ -92,6 +92,8 @@ submitButton2.addEventListener('click', (event)=>{
         // in order to prevent that so that we can execute the logic in this method is to use 
         // the 'preventDefault()' function
 
+        // document.body.style.backgroundColor = 'yellow';
+
         // retrieving the value from our text input
         if (document.getElementById("dog").checked){
             let textInput2 = document.getElementById("dog");
@@ -124,5 +126,40 @@ submitButton2.addEventListener('click', (event)=>{
         }
 
 
+        
+
+})
+
+
+
+
+
+let form3Div = document.getElementById("form3");
+
+// Get our submit button so we can add an event listener
+
+let submitButton3 = document.getElementById("submit-button3");
+
+submitButton3.addEventListener('click', (event)=>{
+    event.preventDefault(); //The default action when pressing a button is to refresh the page
+        // in order to prevent that so that we can execute the logic in this method is to use 
+        // the 'preventDefault()' function
+
+        
+
+        // retrieving the value from our text input
+        if (document.getElementById("dark").checked){
+            document.body.style.backgroundColor = 'grey';
+
+        }
+
+        if (document.getElementById("light").checked){
+
+            document.body.style.backgroundColor = 'white';
+
+        }
+
+
+        
 
 })
